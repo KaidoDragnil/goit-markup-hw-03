@@ -5,6 +5,11 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -33,6 +38,8 @@ a {
   padding-right: 156px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* HEADER */
@@ -40,11 +47,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: calc(100%-332px) / 2;
+  flex-basis: calc(100%-40px) / 2;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
 }
 .navigation {
   display: flex;
   gap: 76px;
+  flex-basis: calc(100%-76px) / 2;
 }
 .logo {
   color: #4d5ae5;
@@ -65,6 +75,7 @@ a {
 .navigation-list {
   display: flex;
   gap: 40px;
+  flex-basis: calc(100%-80px) / 3;
 }
 .link-navigation {
   color: #2e2f42;
@@ -98,8 +109,15 @@ a {
 
 /* MAIN */
 /* HERO */
-.hero-imamge {
+.hero-image {
   background-color: #2e2f42;
+}
+.hero-image-container {
+  padding: 188px 472px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
 }
 .hero-image-title {
   color: #ffffff;
@@ -119,10 +137,23 @@ a {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 15px 26px;
+  max-width: 169px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-image-button:hover,
 .hero-image-button:focus {
   background-color: #404bbf;
+}
+.section-first-title {
+  visibility: hidden;
+}
+.our-metods-list {
+  display: flex;
+  gap: 24px;
+}
+.our-metods-list-block {
 }
 .metod-name {
   color: #2e2f42;
@@ -144,6 +175,7 @@ a {
 .team-list {
   display: flex;
   gap: 24px;
+  padding-bottom: 120px;
 }
 .our-team-title,
 .our-portfolio-title {
@@ -154,10 +186,12 @@ a {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-top: 120px;
   padding-bottom: 72px;
 }
-.our-team-list {
+.team-list .list-link {
+  display: flex;
+  flex-direction: column;
+
   background-color: #ffffff;
 }
 .our-team-list-name {
