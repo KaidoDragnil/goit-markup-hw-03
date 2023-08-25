@@ -37,7 +37,7 @@ a {
 }
 
 .container {
-  max-width: 1158px;
+  width: 1158px;
   /* padding-left: 156px;
   padding-right: 156px; */
   margin-left: auto;
@@ -121,11 +121,11 @@ a {
 .hero-image {
   background-color: #2e2f42;
   margin-left: 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
   margin-right: 0;
 }
 .hero-image-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +162,7 @@ a {
   background-color: #404bbf;
 }
 .section-first-title {
-  visibility: hidden;
+  display: none;
 }
 .section-our-medots {
   padding-top: 120px;
@@ -214,6 +214,7 @@ a {
 .team-list .list-link {
   display: flex;
   flex-direction: column;
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
@@ -263,6 +264,7 @@ a {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
@@ -283,7 +285,7 @@ a {
   letter-spacing: 0.32px;
   width: 264px;
 }
-.logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
