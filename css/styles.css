@@ -191,7 +191,7 @@ a {
 .team-list .list-link {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   background-color: #ffffff;
 }
 .our-team-list-name {
