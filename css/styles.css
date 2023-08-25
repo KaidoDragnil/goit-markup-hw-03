@@ -31,6 +31,7 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -80,8 +81,6 @@ a {
   color: #f4f4fd;
 }
 .navigation-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   gap: 40px;
   flex-basis: calc(100%-80px) / 3;
@@ -89,6 +88,8 @@ a {
 .link-navigation {
   color: #2e2f42;
   font-size: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -161,8 +162,17 @@ a {
 .hero-image-button:focus {
   background-color: #404bbf;
 }
-.section-first-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .section-our-medots {
   padding-top: 120px;
